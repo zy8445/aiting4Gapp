@@ -1,0 +1,47 @@
+/*菜单栏类容*/
+  	/*上面*/
+  	.medu_top>ul{
+  		display: flex;
+  		/*background: red;*/
+  		padding: 40px 0;
+  		justify-content: space-around;
+  	}
+  	.medu_top>ul>p{
+  		text-align: center;
+  	}
+  	.medu_top>ul .iconfont{
+  		font-size: 40px;
+  		margin-left: 25%;
+  		color: #cf5375;
+  	}
+  	/*中间*/
+  	.medu_center li{
+  		line-height: 50px;
+  		padding-left: 8%; 
+  	}
+  	.medu_center li:nth-child(6){
+  		width: 80%;
+  		height: 1px;
+  		margin: 30px 0;
+  		margin: 0 auto;
+  		background: #dddddd;
+  	}
+/*下面*/
+.medu_button{
+	padding: 23% 10%; 
+}
+.medu_button>ul{
+	justify-content: space-around;
+	display: flex;
+}
+.medu_button>ul>li{
+	flex: 1;	
+}
+.medu_button>ul>li>ul{
+	display: flex;
+}
+.medu_button .iconfont{
+	font-size: 20px;
+	color: #cf5375;
+	padding-right: 10px;
+}

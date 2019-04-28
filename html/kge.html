@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+		<link rel="stylesheet" href="../css/medu.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/bofang.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/mui.js" ></script>
+		<script type="text/javascript" src="../js/kge.js" ></script>
+		  <style>
+		  	*{
+		  		padding: 0;
+		  		margin: 0;
+		  		list-style: none;
+		  	}
+		  .bigBox{
+    		max-width: 640px;
+    		min-width: 320px;
+    		margin: 0 auto;
+    	}
+    	.header ul{
+    		display: flex;
+    		list-style: none;
+    		margin: 0px auto;
+    		justify-content: space-around;
+    	}
+    	/*语音输入*/
+    	.yuyin{
+    		position: absolute;
+    		right: 10px;
+    		top: 10px;
+    	}
+   		 </style>
+	</head>
+	<body>
+		<!--侧滑-->
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in bigBox">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper" style="background: #ffffff;">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        <!--上面-->
+	        <div class="medu_top">
+		        <ul>
+		        	<li>
+		        		<p><span class="iconfont icon-zhuanshihuiyuan"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        	<li>
+		        		<p><span class="iconfont icon-yinle3"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        	<li>
+		        		<p><span class="iconfont icon-xiaoxizhongxin"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        </ul>
+	        </div>
+	        <!--中间-->
+	        <div class="medu_center">
+	        	<ul>
+	        		<li>听歌识曲</li>
+	        		<li>蝰蛇音效</li>
+	        		<li>音乐云盘</li>
+	        		<li>皮肤管理</li>
+	        		<li>设置闹钟</li>
+	        		<li></li>
+	        		<li>定时关闭</li>
+	        		<li>意见反馈</li>
+	        	</ul>
+	        </div>
+	        <!--下面-->
+	        <div class="medu_button">
+	        	<ul>
+	        		<li class="medu_button1">
+	        			<ul>
+	        				<li><span class="iconfont icon-shezhi"></span></li>
+	        				<li>设置</li>
+	        			</ul>
+	        		</li>
+	        		<li class="medu_button2">
+	        			<ul>
+	        				<li><span class="iconfont icon-gongjicls"></span></li>
+	        				<li>退出应用</li>
+	        			</ul>
+	        		</li>
+	        	</ul>
+	        </div>
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title header">
+	      	<ul>
+	      		<li class="wode">我的</li>
+	      		<li class="leku">乐库</li>
+	      		<li class="yousheng">有声</li>
+	      		<li class="kge">k歌</li>
+	      		<!--<li>11</li>-->
+	      	</ul>
+	      </h1>
+	    </header>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	        444
+	        
+	      </div>
+	     
+	    </div>  
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+	 <!--底部播放-->
+	<nav class="mui-bar mui-bar-tab">
+			<video type="video/mp3" class="video1" src="音频/汪苏泷 - 停止跳动.mp3" controls></video>
+	</nav>
+	</body>
+</html>

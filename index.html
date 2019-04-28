@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <!--我的页样式-->
+    <link rel="stylesheet" href="css/wode.css" />
+    <!--菜单栏样式-->
+    <link rel="stylesheet" href="css/medu.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <!--播放-->
+    <link rel="stylesheet" href="css/bofang.css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <!--换一批-->
+    <script type="text/javascript" src="js/huanyipi.js" ></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+ 
+</head>
+<body>
+	<!--侧滑-->
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in bigBox" >
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper" style="background: #ffffff;">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        <!--上面-->
+	        <div class="medu_top">
+		        <ul>
+		        	<li>
+		        		<p><span class="iconfont icon-zhuanshihuiyuan"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        	<li>
+		        		<p><span class="iconfont icon-yinle3"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        	<li>
+		        		<p><span class="iconfont icon-xiaoxizhongxin"></span></p>
+		        		<p>砖石会员</p>
+		        	</li>
+		        </ul>
+	        </div>
+	        <!--中间-->
+	        <div class="medu_center">
+	        	<ul>
+	        		<li>听歌识曲</li>
+	        		<li>蝰蛇音效</li>
+	        		<li>音乐云盘</li>
+	        		<li>皮肤管理</li>
+	        		<li>设置闹钟</li>
+	        		<li></li>
+	        		<li>定时关闭</li>
+	        		<li>意见反馈</li>
+	        	</ul>
+	        </div>
+	        <!--下面-->
+	        <div class="medu_button">
+	        	<ul>
+	        		<li class="medu_button1">
+	        			<ul>
+	        				<li><span class="iconfont icon-shezhi"></span></li>
+	        				<li>设置</li>
+	        			</ul>
+	        		</li>
+	        		<li class="medu_button2">
+	        			<ul>
+	        				<li><span class="iconfont icon-gongjicls"></span></li>
+	        				<li>退出应用</li>
+	        			</ul>
+	        		</li>
+	        	</ul>
+	        </div>
+	        
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav" style="background: red;">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title header">
+	      	<ul class="qiehuan">
+	      		<li class="wode">我的</li>
+	      		<li class="leku">乐库</li>
+	      		<li class="yousheng">有声</li>
+	      		<li class="kge">k歌</li>
+	      		<!--<li>11</li>-->
+	      	</ul>
+	      </h1>
+	    </header>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	       <!--搜索框-->
+	       <div class="mui-input-row mui-search" style="background: red;">
+	           <input type="search" class="mui-input-clear" placeholder="歌名/歌手名/歌词">
+	       </div>
+	       <!--头像部分-->
+	       <div class="touxiang">
+	       	<!--左边部分-->
+	       		<div class="touxiang_left">
+	       			<ul>
+	       				<li><img src="img/touxiang.jpg"></li>
+	       				<li>
+	       					<ul class="nicheng">
+	       						<li>如果时光她寂寞</li>
+	       						<li><span>关注0</span>|<span>粉丝0</span></li>
+	       					</ul>
+	       				</li>
+	       			</ul>
+	       		</div>
+	       	<!--右边部分-->
+	       		<div class="touxiang_right">
+	       			<ul>
+	       				<li>免流量</li>
+	       				<li>普通会员</li>
+	       			</ul>
+	       		</div>
+	       </div>
+	       <!--中间本地 下载部分-->
+	       <div class="bendi">
+	       		<ul>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-yinyue"></span></li>
+	       					<li>本地</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-xiazai"></span></li>
+	       					<li>下载</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-zuijinpaishe"></span></li>
+	       					<li>最近</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-shoucang"></span></li>
+	       					<li>我的收藏</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-wodeyinyueyigouyinyue" style="font-size: 35px;"></span></li>
+	       					<li>已购音乐</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul>
+	       					<li><span class="iconfont icon-cailing"></span></li>
+	       					<li>彩铃</li>
+	       					<li>0</li>
+	       				</ul>
+	       			</li>
+	       		</ul>
+	       </div>
+	       <!--创建我的歌单-->
+	       <div class="creat">
+	       	 <ul>
+	       	 	<li>我创建的歌单</li>
+	       	 	<li><span class="iconfont icon-chuangjian"></span></li>
+	       	 </ul>
+	       </div>
+	       <div class="sorry">
+	       		<ul>
+	       			<li><img src="img/tvx.png"></li>
+	       			<li>sorry!这里什么都没有</li>
+	       		</ul>
+	       </div>
+		<!--换一批 刷新部分-->
+			<div class="change">
+				<!--切换按钮-->
+				<div class="change_top">
+					<ul>
+						<li>可能喜欢的歌单</li>
+						<li><span class="iconfont icon-shuaxin changeTubiao"></span></li>
+					</ul>
+				</div>
+				<!--被切换的图片部分-->
+				<div class="change_button">
+				<!--第一个ul-->
+				<div class="frist_ul  changeShow changeHiddeh">
+					<ul>
+						<li>
+							<img src="img/01.jpg"/>
+							<p>前方高能,洗脑神曲来袭</p>
+						</li>
+						<li>
+							<img src="img/02.jpg"/>
+							<p>听懂了是经历,听不懂是幸运</p>
+						</li>
+						<li>
+							<img src="img/03.jpg"/>
+							<p>五十首难以超越的经典话语老哥</p>
+						</li>
+						<li>
+							<img src="img/04.jpg"/>
+							<p>舒缓清音,晚安好梦</p>
+						</li>
+						<li>
+							<img src="img/05.jpg"/>
+							<p>百听不厌的国语经典</p>
+						</li>
+						<li>
+							<img src="img/06.jpg"/>
+							<p>抖音必听歌曲</p>
+						</li>
+					</ul>
+				</div>
+						<!--第二个ul-->
+				<div class="second_ul changeHiddeh" >
+					<ul>
+						<li>
+							<img src="img/06.jpg"/>
+							<p>摇滚的力量,给你一个不困的理由</p>
+						</li>
+						<li>
+							<img src="img/05.jpg"/>
+							<p>一首新歌</p>
+						</li>
+						<li>
+							<img src="img/04.jpg"/>
+							<p>抖音近期洗脑神曲汇总</p>
+						</li>
+						<li>
+							<img src="img/03.jpg"/>
+							<p>2018中国好声音第七期</p>
+						</li>
+						<li>
+							<img src="img/02.jpg"/>
+							<p>时髦的人都在听这些歌</p>
+						</li>
+						<li>
+							<img src="img/01.jpg"/>
+							<p>好听的80年代,90年代经典老歌</p>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			
+	      </div>
+	    </div>  
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+	<!--底部播放-->
+	<nav class="mui-bar mui-bar-tab">
+			<video type="video/mp3" class="video1" src="音频/汪苏泷 - 停止跳动.mp3" controls></video>
+	</nav>
+	   <script type="text/javascript" charset="utf-8">
+      	(function($){
+//    		console.log(11111111);
+      		$('.mui-scroll-wrapper').scroll({     			
+      			bounce:true,
+      			indicators:true,
+      		});
+      	})(mui);
+    </script>
+	<script type="text/javascript">
+//点击进行颜色的切换
+      	$(".qiehuan>li").on("tap",function(){
+      		$(this).addClass("yanse").siblings("li").removeClass("yanse");
+      	})
+//    	调用乐库页面
+		var leku = document.getElementsByClassName("leku")[0];
+		leku.addEventListener('tap',function(){
+      		mui.openWindow({
+			url: 'html/leku.html', 
+			id:'leku'
+		})
+      	})
+//		调用有声页面
+		var yousheng = document.getElementsByClassName("yousheng")[0];
+		yousheng.addEventListener('tap',function(){
+      		mui.openWindow({
+			url: 'html/yousheng.html', 
+			id:'yousheng'
+		})
+      	})
+//		调用k歌页面
+		var kge = document.getElementsByClassName("kge")[0];
+		kge.addEventListener('tap',function(){
+      		mui.openWindow({
+			url: 'html/kge.html', 
+//			id:'kge'
+		})
+      })
+	</script>
+</body>
+</html>

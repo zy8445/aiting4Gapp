@@ -1,0 +1,194 @@
+.bigBox{
+		max-width: 640px;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.header ul{
+		display: flex;
+		list-style: none;
+		margin: 0px auto;
+		justify-content: space-around;
+	}
+	.header ul li{
+		color: gray;
+	}
+	/*语音输入*/
+	.yuyin{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	.yanse{
+		color: white;
+	}
+	/*头像*/
+	.touxiang{
+		background: red;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		box-sizing: border-box;
+	}
+	/*左边部分*/
+	.touxiang_left{
+		flex: 1.5;
+		height: 100px;
+	}
+	.touxiang_left>ul{
+		display: flex;
+	}
+	.touxiang_left>ul>li{
+		height: 100px;
+		align-items: space-between;
+	}
+	.touxiang_left>ul>li:nth-child(1){
+		flex: 1;
+		box-sizing: border-box;
+	}
+	.touxiang_left>ul>li:nth-child(2){
+		flex: 2;
+	}
+	.touxiang_left>ul img{
+		width: 80%;
+		height: 70%;
+		border-radius: 50%;
+		margin: 6% 10%;
+	}
+	/*昵称*/
+	.nicheng{
+		margin: 13% auto;
+	}
+	.nicheng>li{
+		color: white;
+		font-family: "黑体";
+	}
+	.nicheng>li span{
+		padding: 5%;
+	}
+	/*右边部分*/
+	.touxiang_right{
+		flex: 1;
+		height: 100px;
+	}
+	.touxiang_right>ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	.touxiang_right>ul>li{
+		border: 1px solid white;
+		padding: 2%;
+		color: white;
+		margin: 20% auto;
+		border-radius: 10px;
+		box-sizing: border-box;
+		font-size: 12px;
+	}
+	/*中间本地 下载部分*/
+	.bendi{
+		width: 100%;
+		margin-top: 20px;
+	}
+	.bendi>ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.bendi>ul>li{
+		width: 33%;
+		/*background: green;*/
+		text-align: center;
+		padding: 10px;
+		font-size: 15px;
+		color: #4a4a4a;
+		font-weight: 600;
+	}
+	/*阿里图标*/
+	.bendi .iconfont{
+		font-size: 30px;
+		color: #cf5375;
+		font-weight: 500;
+	}
+	/*创建我的歌单*/
+	.creat>ul{
+		padding: 50px 0 20px;
+		width: 100%;
+		/*background: red;*/
+		display: flex;
+	}
+	.creat>ul>li:nth-child(1){
+		flex: 10;
+		text-align: center;
+		font-family: 微软雅黑;
+	}
+	.creat>ul>li:nth-child(2){
+		flex: 1;
+	}
+	.creat .iconfont{
+		font-weight: 500;
+		color: #cf5375;
+		font-size: 21px;
+	}
+	.sorry{
+		width: 100%;
+		text-align: center;
+	}
+	.sorry>ul>li{
+		margin: 10px 0 20px;
+	}
+	.sorry img{
+		width: 40%;
+		height: 40%;
+	}
+	/*换一批 刷新部分*/
+	/*切换按钮*/
+	.change_top>ul{
+		display: flex;
+		padding: 40px;
+		/*background: pink;*/
+	}
+	.change_top>ul>li:nth-child(1){
+		flex: 10;
+		text-align: center;
+	}
+	.change_top>ul>li:nth-child(2){
+		flex: 1;
+	}
+	.change_top>ul>li:nth-child(2)>span{
+		color: #cf5375;
+	}
+	
+	/*被切换的图片*/
+	.change_button>div>ul{
+		padding-bottom: 40px;
+		display: flex;
+		flex-wrap: wrap;	
+	}	
+	.change_button>div{
+		display: none;
+	}
+	.change_button>div>ul>li{
+		width: 33.3%;
+		height: 200px;
+		padding: 20px 0;
+	}
+	.change_button>div>ul>li>p{
+		color: black;
+		font-family: "微软雅黑";
+		
+	}
+	.change_button>div>ul>li img{
+		width: 100%;
+		height: 80%;
+		/*padding-left: 4px;*/
+		box-sizing: border-box;
+		padding: 2px;
+	}
+	div.changeShow{
+		display: block;
+	}
+  	
