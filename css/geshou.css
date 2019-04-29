@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.box{
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.hotGs{
+	background: white;
+}
+.hotGs>div{
+	height: 100px;
+	/*background: red;*/
+	color: gray;
+	line-height: 150px;
+}
+.hotGs>ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.hotGs>ul>li{
+	text-align: center;
+	width: 25%;
+}
+.hotGs>ul>li img{
+	width: 60px;
+	height: 60%;
+	border-radius: 50%;
+}
+/*下面分类*/
+.sort{
+	background: #FFFFFF;
+	margin-top: 10px;
+}
+.sort>p{
+	margin-left: 20px;
+	line-height: 40px;
+}
+.sort>ul>li{
+	margin-bottom: 20px;
+}
+.sort>ul>li:last-child{
+	padding-bottom: 40px;
+}
+.sort>ul>li>span:nth-child(1){
+	margin-left: 15px;
+}
+.sort>ul>li>span:nth-child(2){
+	margin-left: 220px;
+	font-size: 14px;
+}
+.empty{
+	width: 90%;
+	height: 1px;
+	background: #666666;
+	opacity: 0.3;
+	margin: 0 auto;
+}
+.shipin{
+	width: 100%;
+}

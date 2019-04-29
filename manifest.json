@@ -137,12 +137,15 @@
 					"html/qiehuanPic1.html",
 					"音频/汪苏泷 - 停止跳动.mp3"
 				],
-				"refer": [],
+				"refer": [
+					"html/yousheng.html"
+				],
 				"priority": 0
 			},
 			"html/kge.html": {
 				"resources": [
-					"html/yousheng.html"
+					"html/yousheng.html",
+					"html/kgezi.html"
 				],
 				"refer": [
 					"index.html"
@@ -151,7 +154,8 @@
 			},
 			"html/leku.html": {
 				"resources": [
-					"html/kge.html"
+					"html/kge.html",
+					"html/lunbozi.html"
 				],
 				"refer": [
 					"html/yousheng.html",
@@ -160,10 +164,29 @@
 				"priority": 0
 			},
 			"html/yousheng.html": {
-				"resources": [],
+				"resources": [
+					"音频/汪苏泷 - 停止跳动.mp3",
+					"音频/ertas_ed_viesturs_0001.mp4",
+					"html/youshengzi.html"
+				],
 				"refer": [
 					"html/kge.html",
 					"index.html",
+					"html/leku.html"
+				],
+				"priority": 0
+			},
+			"html/youshengzi.html": {
+				"resources": [
+					"音频/ertas_ed_viesturs_0001.mp4"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/kgezi.html": {
+				"resources": [],
+				"refer": [
+					"html/yousheng.html",
 					"html/leku.html"
 				],
 				"priority": 0

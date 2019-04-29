@@ -12,32 +12,54 @@
 			"html/leku.html",
 			"html/kge.html",
 			"html/qiehuanPic2.html",
-			"html/qiehuanPic1.html"
+			"html/qiehuanPic1.html",
+			"html/yousheng.html"
 		]
 	},
 	"html/kge.html": {
 		"refer": [
 			"index.html",
-			"html/yousheng.html"
+			"html/yousheng.html",
+			"html/kgezi.html"
 		],
 		"resources": [
-			"html/yousheng.html"
+			"html/yousheng.html",
+			"html/kgezi.html"
 		]
 	},
 	"html/leku.html": {
 		"refer": [
 			"html/yousheng.html",
 			"index.html",
-			"html/kge.html"
+			"html/kge.html",
+			"html/lunbozi.html"
 		],
 		"resources": [
-			"html/kge.html"
+			"html/kge.html",
+			"html/lunbozi.html"
 		]
 	},
 	"html/yousheng.html": {
 		"refer": [
 			"html/kge.html",
 			"index.html",
+			"html/leku.html",
+			"html/youshengzi.html"
+		],
+		"resources": [
+			"音频/汪苏泷 - 停止跳动.mp3",
+			"音频/ertas_ed_viesturs_0001.mp4",
+			"html/youshengzi.html"
+		]
+	},
+	"html/youshengzi.html": {
+		"resources": [
+			"音频/ertas_ed_viesturs_0001.mp4"
+		]
+	},
+	"html/kgezi.html": {
+		"refer": [
+			"html/yousheng.html",
 			"html/leku.html"
 		]
 	}

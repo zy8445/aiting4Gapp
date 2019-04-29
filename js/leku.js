@@ -36,4 +36,8 @@ window.onload = function(){
 			id:'kge'
 		})
       	})
+		
+//		轮播
+	
+		
 }

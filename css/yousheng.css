@@ -1,0 +1,44 @@
+	*{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	  .footer,.bigBox{
+		max-width: 640px;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	.header ul{
+		display: flex;
+		list-style: none;
+		margin: 0px auto;
+		justify-content: space-around;
+	}
+	.header ul li{
+		color: gray;
+	}
+	/*语音输入*/
+	.yuyin{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	/*氧气听书*/
+	.yangqi>ul{
+		padding-top: 10%;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.yangqi>ul>li{
+		width: 25%;
+		margin-top: 3%;
+	}
+	.yangqi>ul>li>p:nth-child(1){
+		width: 50%;
+		padding: 10px;
+		margin-left: 15%;
+		height: 50%;
+		text-align: center;
+		/*background: greenyellow;*/
+		border-radius: 50%;

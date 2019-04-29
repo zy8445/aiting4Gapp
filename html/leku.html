@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="../css/iconfont.css" />
 		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
 		<script type="text/javascript" src="../js/mui.js" ></script>
+		<script type="text/javascript" src="../js/lunbo.js" ></script>
 		<script type="text/javascript" src="../js/leku.js" ></script>
 		  <style>
 		  	*{
@@ -29,13 +30,87 @@
     		margin: 0px auto;
     		justify-content: space-around;
     	}
+    	.header ul li{
+    		color: gray;
+    	}
     	/*语音输入*/
     	.yuyin{
     		position: absolute;
     		right: 10px;
     		top: 10px;
     	}
-   		 </style>
+    	.lunbo{
+    		background: red;
+    		/*height: 1200px;*/
+    		max-width: 640px;
+    		min-width: 320px;
+    		margin: 0 auto;
+    		z-index: 100;
+    	}
+    	.lunbo img{
+    		height: 170px;
+    	}
+    	/*歌手重复部分*/
+    	.singer>ul{
+	display: flex;
+	margin: 10% 0;
+	margin-left: 10%;
+	justify-content: space-around;
+	}
+	.singer>ul>li{
+		width: 25%;
+	}
+	.singer>ul>li>p:nth-child(2){
+		color: #000000;
+	}
+	/*删除按钮部分*/
+	/*k歌部分*/
+	.kge{
+		box-sizing: border-box;
+		
+	}
+	.kgeFu{
+		height: 80px;
+		display: flex;
+	}
+	.kgetu{
+		float: left;
+		width:80px;
+		height: 80px;
+	}
+	.kgetu img{
+		width: 100%;
+		height: 100%;
+	}
+	.kgewen{
+		font-family: 微软雅黑;
+		float: left;
+		margin: 15px;
+	}
+	.kgewen>li{
+		line-height: 30px;
+	}
+	.kgewen>li:nth-child(2){
+		color: #666666;
+		font-size: 13px;
+	}
+	.kgeFu>li:nth-child(1){
+		flex: 7;
+	}
+	
+	/*右边k歌文字*/
+	.kgeFu>li:nth-child(2){
+		flex: 1;
+		text-align: center;
+		line-height: 15px;
+	}
+	.border{
+		padding: 10px;
+		margin-top: 6%;
+		color: black;
+		font-weight: 700;
+	}
+   	 </style>
 	</head>
 	<body>
 		<!--侧滑-->
@@ -100,7 +175,7 @@
 	  <!-- 主页面容器 -->
 	  <div class="mui-inner-wrap">
 	    <!-- 主页面标题 -->
-	    <header class="mui-bar mui-bar-nav">
+	    <header class="mui-bar mui-bar-nav" style="background: red;">
 	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
 	      <h1 class="mui-title header">
 	      	<ul>
@@ -114,8 +189,208 @@
 	    <div class="mui-content mui-scroll-wrapper">
 	      <div class="mui-scroll">
 	        <!-- 主界面具体展示内容 -->
-	        222
+	       <!--搜索框-->
+	       <div class="mui-input-row mui-search" style="background: red;">
+	           <input type="search" class="mui-input-clear" placeholder="歌名/歌手名/歌词">
+	       </div>
+	       <!--轮播图-->
+	       <div id="slider" class="mui-slider lunbo" >
+	         <div class="mui-slider-group mui-slider-loop">
+	           <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	           <div class="mui-slider-item mui-slider-item-duplicate">
+	             <a href="#">
+	               <img src="../img/12.png">
+	             </a>
+	           </div>
+	           <!-- 第一张 -->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/12.png">
+	             </a>
+	           </div>
+	           <!-- 第二张 -->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/06.jpeg">
+	             </a>
+	           </div>
+	           <!-- 第三张 -->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/07.jpg">
+	             </a>
+	           </div>
+	           <!-- 第四张 -->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/08.jpg">
+	             </a>
+	           </div>
+	           <!--第五章-->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/09.jpeg">
+	             </a>
+	           </div>
+	           <!--第六章-->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/10.jpg">
+	             </a>
+	           </div>
+	           <!--第七章-->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/11.jpg">
+	             </a>
+	           </div>
+	           <!--第八章-->
+	           <div class="mui-slider-item">
+	             <a href="#">
+	               <img src="../img/12.png">
+	             </a>
+	           </div>
+	           <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	           <div class="mui-slider-item mui-slider-item-duplicate">
+	             <a href="#">
+	               <img src="../img/05.jpg">
+	             </a>
+	           </div>
+	         </div>
+	         <div class="mui-slider-indicator">
+	           <div class="mui-indicator mui-active"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	           <div class="mui-indicator"></div>
+	         </div>
+	       </div>
+	       <!--轮播图 结束-->
+	        <script type="text/javascript">
+			//获得slider插件对象
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+				  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+				});
+			</script>
+	       <!--歌手重复部分-->
+	        <!--歌手-->
+	       	<div class="singer">
+	       		<ul>
+	       			<li>
+	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
+	       				<p class="singer">歌手</p>
+	       			</li>
+	       			<li>
+	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
+	       				<p>歌手</p>
+	       			</li>
+	       			<li>
+	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
+	       				<p>歌手</p>
+	       			</li>
+	       			<li>
+	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
+	       				<p>歌手</p>
+	       			</li>
+	       		</ul>
+	       	</div>
+	       	<!--删除按钮-->
+	       			<div class="kge">
+	       		<ul>
+	       			<!--每一整行-->
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       			<li>
+	       				<ul class="kgeFu">
+	       					<li>
+	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
+	       						<ul class="kgewen">
+	       							<li>女人花</li>
+	       							<li>梅兰芳</li>
+	       						</ul>
+	       					</li>
+	       					<li class="border">...</li>
+	       				</ul>
+	       			</li>
+	       		</ul>
+	       	</div>
 	       
+	       	
+	       	<!--删除按钮结束-->
 	      </div>
 	    </div>  
 	    <div class="mui-off-canvas-backdrop"></div>
@@ -123,7 +398,8 @@
 	</div>
 	 <!--底部播放-->
 		<nav class="mui-bar mui-bar-tab">
-				<video type="video/mp3" class="video1" src="音频/汪苏泷 - 停止跳动.mp3" controls></video>
+			<audio type="video/mp3" class="video1" src="../音频/汪苏泷 - 停止跳动.mp3" controls></audio>
 		</nav>
+		
 	</body>
 </html>
