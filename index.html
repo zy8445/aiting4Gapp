@@ -16,7 +16,11 @@
     <!--换一批-->
     <script type="text/javascript" src="js/huanyipi.js" ></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
- 
+ <style>
+ 	.yanse{
+ 		color: green;
+ 	}
+ </style>
 </head>
 <body>
 	<!--侧滑-->
@@ -86,7 +90,7 @@
 	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
 	      <h1 class="mui-title header">
 	      	<ul class="qiehuan">
-	      		<li class="wode">我的</li>
+	      		<li class="wode yanse">我的</li>
 	      		<li class="leku">乐库</li>
 	      		<li class="yousheng">有声</li>
 	      		<li class="kge">k歌</li>
@@ -118,8 +122,8 @@
 	       	<!--右边部分-->
 	       		<div class="touxiang_right">
 	       			<ul>
-	       				<li>免流量</li>
-	       				<li>普通会员</li>
+	       				<span>免流量</span>
+	       				<span>普通会员</span>
 	       			</ul>
 	       		</div>
 	       </div>
@@ -218,7 +222,7 @@
 							<p>百听不厌的国语经典</p>
 						</li>
 						<li>
-							<img src="img/06.jpg"/>
+							<img src="img/01.jpg"/>
 							<p>抖音必听歌曲</p>
 						</li>
 					</ul>
@@ -227,7 +231,7 @@
 				<div class="second_ul changeHiddeh" >
 					<ul>
 						<li>
-							<img src="img/06.jpg"/>
+							<img src="img/18.jpg"/>
 							<p>摇滚的力量,给你一个不困的理由</p>
 						</li>
 						<li>
@@ -275,8 +279,10 @@
     </script>
 	<script type="text/javascript">
 //点击进行颜色的切换
+//	---------------------------
       	$(".qiehuan>li").on("tap",function(){
-      		$(this).addClass("yanse").siblings("li").removeClass("yanse");
+      		$(this).css("color","white");
+      		$(this).siblings("li").css("color","gray");
       	})
 //    	调用乐库页面
 		var leku = document.getElementsByClassName("leku")[0];

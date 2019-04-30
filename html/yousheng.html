@@ -9,24 +9,21 @@
 		<link rel="stylesheet" href="../css/medu.css" />
 		<link rel="stylesheet" href="../css/iconfont.css" />
 		<link rel="stylesheet" href="../css/bofang.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<script type="text/javascript" src="../js/swiper.min.js" ></script>
 		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
 		<script type="text/javascript" src="../js/mui.js" ></script>
 		<script type="text/javascript" src="../js/yousheng.js" ></script>
-		 <link rel="stylesheet" href="../css/yousheng.css" />
+		 <link rel="stylesheet" href="../css/yousheng.css">
 		 <style>
-		 	*{
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		}
 	.change_button>div>ul{
-		padding-bottom: 60px;
 		display: flex;
-		flex-wrap: wrap;	
+		flex-wrap: wrap;
 	}	
 	.change_button>div>ul>li{
 		width: 33.3%;
-		padding: 10px 0;
+		padding-left: 10px;
+		padding-top: 10px;
 	}
 	.change_button>div>ul>li>p{
 		color: black;
@@ -37,7 +34,7 @@
 		width: 90%;
 		height: 90%;
 		box-sizing: border-box;
-		 </style>
+ 		</style>
 	</head>
 	<body>
 		<!--侧滑-->
@@ -105,7 +102,7 @@
 	    <header class="mui-bar mui-bar-nav" style="background: red;">
 	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
 	      <h1 class="mui-title header">
-	      	<ul>
+	      	<ul class="qiehuan">
 	      		<li class="wode">我的</li>
 	      		<li class="leku">乐库</li>
 	      		<li class="yousheng">有声</li>
@@ -113,9 +110,12 @@
 	      		<!--<li>11</li>-->
 	      	</ul>
 	      </h1>
+	      
 	    </header>
+	    
 	    <div class="mui-content mui-scroll-wrapper">
 	      <div class="mui-scroll">
+	      	
 	        <!-- 主界面具体展示内容 -->
 	       <!--搜索框-->
 	       <div class="mui-input-row mui-search" style="background: red;">
@@ -130,97 +130,150 @@
 		       		</li>
 		       		<li>
 		       			<p style="background: blueviolet;"><span class="iconfont icon-shouyinji"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>收音机</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: goldenrod;"><span class="iconfont icon-yinyue"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>音乐</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: palevioletred;"><span class="iconfont icon-yule"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>娱乐</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: forestgreen;"><span class="iconfont icon-shu"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>有声书</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: yellow;"><span class="iconfont icon-xiangshengpingshu"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>相声评书</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: orangered;"><span class="iconfont icon-301010"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>资讯</p>
 		       		</li>
 		       		<li>
 		       			<p style="background: blueviolet;"><span class="iconfont icon-quanbufenleimokuai"></span></p>
-		       			<p>氧气听书</p>
+		       			<p>全部分类</p>
 		       		</li>
 		       	</ul>
 	       </div>
 	       <!--音乐-->
-	       <div id="music" style="margin-left: 45%;">
+	       <div id="music" style="margin-left: 45%; padding: 10px 0;">
 	       		<ul>
 	       			<li>音乐<span class="iconfont icon-zuijinpaishe"></span></li>
 	       		</ul>
 	       </div>
 	       
 	       <!--几张图片-->
-      	<div class="change_button">
-			<div>
-				<ul>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
-						<p>前方高能,洗脑神曲来袭</p>
-					</li>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
-						<p>听懂了是经历,听不懂是幸运</p>
-					</li>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
-						<p>五十首难以超越的经典话语老哥</p>
-					</li>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
-						<p>舒缓清音,晚安好梦</p>
-					</li>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
-						<p>百听不厌的国语经典</p>
-					</li>
-					<li>
-						<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted ></video>
-						<p>抖音必听歌曲</p>
-					</li>
-				</ul>
-			</div>	
-		</div>
-	       <!--<script type="text/javascript">
-	       	mui.init({
-      		subpages:[{
-      			url:'youshengzi.html',
-      			styles:{
-      				top:'345px',
-		      			}
-		      		}]
-		      	});
-	       </script>-->
-	      	
+	     
+	     
+	     <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<div class="change_button">
+					<div>
+						<ul>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>总有这样的歌...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>夜色如水安静放...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>哄你入睡的流行...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>催眠钢琴曲-冥想...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>指尖下的流行钢...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted ></video>
+								<p>一段话一首歌</p>
+							</li>
+						</ul>
+					</div>	
+				</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="change_button">
+					<div>
+						<ul>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>今日为你推荐</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>敬往事一杯酒...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>甜心女生梦话你的耳朵...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>确认过眼神我遇上对...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>景点上世纪最热的...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted ></video>
+								<p>春游音乐随性</p>
+							</li>
+						</ul>
+					</div>	
+				</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="change_button">
+					<div>
+						<ul>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>无前奏我喜欢的...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>放空大脑专治的语音福...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>给你不一样的好歌...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>那些喜欢到无...</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted></video>
+								<p>百听不厌的国语经典</p>
+							</li>
+							<li>
+								<video type="video/mp4" src="../音频/ertas_ed_viesturs_0001.mp4" autoplay muted ></video>
+								<p>跟上节奏上下班</p>
+							</li>
+						</ul>
+					</div>	
+				</div>
+		      </div>
+		    </div>
+		 </div>
 			<!--主界面具体展示内容结束-->
-	      </div>
-	    </div>  
-	    <div class="mui-off-canvas-backdrop"></div>
+	   </div>
+	  </div>  
+	   <div class="mui-off-canvas-backdrop"></div>
 	  </div>
 	</div>
-	<script type="text/javascript" charset="utf-8">
-      	(function($){
-      		$('.mui-scroll-wrapper').scroll({     			
-      			bounce:true,
-      			indicators:true,
-      		});
-      	})(mui);
-    </script>
 	<nav class="mui-bar mui-bar-tab footer">
 		<audio type="video/mp3" class="video1" src="../音频/汪苏泷 - 停止跳动.mp3" controls></audio>
 	</nav>

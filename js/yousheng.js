@@ -9,7 +9,8 @@ window.onload = function(){
       	})(mui);
 //点击进行颜色的切换
       		$(".qiehuan>li").on("tap",function(){
-      		$(this).addClass("yanse").siblings("li").removeClass("yanse");
+      		$(this).css("color","white");
+      		$(this).siblings("li").css("color","gray");
       	})
 //    		调用我的页面
 		var wode = document.getElementsByClassName("wode")[0];
@@ -35,4 +36,25 @@ window.onload = function(){
 			id:'kge'
 		})
       	})
-}
+
+//左右滑动
+	var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        //clickable 此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。类型：boolean默认：false
+        renderBullet: function (index, className) {
+        //renderBullet 渲染分页器小点。这个参数允许完全自定义分页器的指示点。接受指示点索引和指示点类名作为参数。
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+//  弹性窗口
+	(function($){
+  		$('.mui-scroll-wrapper').scroll({     			
+  			bounce:true,
+  			indicators:true,
+  		});
+     })(mui);
+   
+	}

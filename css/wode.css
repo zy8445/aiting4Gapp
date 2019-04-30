@@ -79,7 +79,7 @@
 		display: flex;
 		justify-content: space-around;
 	}
-	.touxiang_right>ul>li{
+	.touxiang_right>ul>span{
 		border: 1px solid white;
 		padding: 2%;
 		color: white;

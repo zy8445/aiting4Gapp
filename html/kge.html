@@ -8,298 +8,491 @@
 		<link rel="stylesheet" href="../css/medu.css" />
 		<link rel="stylesheet" href="../css/iconfont.css" />
 		<link rel="stylesheet" href="../css/bofang.css" />
-		<link rel="stylesheet" href="../css/kgezi.css" />
+		<link rel="stylesheet" href="../css/kge.css" />
 		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
 		<script type="text/javascript" src="../js/mui.js" ></script>
 		<script type="text/javascript" src="../js/kge.js" ></script>
-		
-		  <style>
-		  	*{
-		  		padding: 0;
-		  		margin: 0;
-		  		list-style: none;
-		  	}
-		  .bigBox{
-    		max-width: 640px;
-    		min-width: 320px;
-    		margin: 0 auto;
-    	}
-    	.header ul{
-    		display: flex;
-    		list-style: none;
-    		margin: 0px auto;
-    		justify-content: space-around;
-    	}
-    	.header ul li{
-    		color: gray;
-    	}
-    	/*语音输入*/
-    	.yuyin{
-    		position: absolute;
-    		right: 10px;
-    		top: 10px;
-    	}
-    	.lunbo img{
-    		height: 150px;
-    	}
-    	.lunbo{
-    		height: 190px;
-    		background: goldenrod;
-    	}
-   		 </style>
 	</head>
 	<body>
 		<!--侧滑-->
 	<!-- 主界面不动、菜单移动 -->
 	<!-- 侧滑导航根容器 -->
-	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in bigBox">
-	  <!-- 菜单容器 -->
-	  <aside class="mui-off-canvas-left" id="offCanvasSide">
-	    <div class="mui-scroll-wrapper" style="background: #ffffff;">
-	      <div class="mui-scroll">
-	        <!-- 菜单具体展示内容 -->
-	        <!--上面-->
-	        <div class="medu_top">
-		        <ul>
-		        	<li>
-		        		<p><span class="iconfont icon-zhuanshihuiyuan"></span></p>
-		        		<p>砖石会员</p>
-		        	</li>
-		        	<li>
-		        		<p><span class="iconfont icon-yinle3"></span></p>
-		        		<p>砖石会员</p>
-		        	</li>
-		        	<li>
-		        		<p><span class="iconfont icon-xiaoxizhongxin"></span></p>
-		        		<p>砖石会员</p>
-		        	</li>
-		        </ul>
-	        </div>
-	        <!--中间-->
-	        <div class="medu_center">
-	        	<ul>
-	        		<li>听歌识曲</li>
-	        		<li>蝰蛇音效</li>
-	        		<li>音乐云盘</li>
-	        		<li>皮肤管理</li>
-	        		<li>设置闹钟</li>
-	        		<li></li>
-	        		<li>定时关闭</li>
-	        		<li>意见反馈</li>
-	        	</ul>
-	        </div>
-	        <!--下面-->
-	        <div class="medu_button">
-	        	<ul>
-	        		<li class="medu_button1">
-	        			<ul>
-	        				<li><span class="iconfont icon-shezhi"></span></li>
-	        				<li>设置</li>
-	        			</ul>
-	        		</li>
-	        		<li class="medu_button2">
-	        			<ul>
-	        				<li><span class="iconfont icon-gongjicls"></span></li>
-	        				<li>退出应用</li>
-	        			</ul>
-	        		</li>
-	        	</ul>
-	        </div>
-	      </div>
-	    </div>
-	  </aside>
-	  <!-- 主页面容器 -->
-	  <div class="mui-inner-wrap">
-	    <!-- 主页面标题 -->
-	    <header class="mui-bar mui-bar-nav" style="background: red;">
-	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-	      <h1 class="mui-title header">
-	      	<ul>
-	      		<li class="wode">我的</li>
-	      		<li class="leku">乐库</li>
-	      		<li class="yousheng">有声</li>
-	      		<li class="kge">k歌</li>
-	      		<!--<li>11</li>-->
-	      	</ul>
-	      </h1>
-	    </header>
-	    <div class="mui-content mui-scroll-wrapper">
-	      <div class="mui-scroll">
-	        <!-- 主界面具体展示内容 -->
-	         <!--搜索框-->
-	       <div class="mui-input-row mui-search" style="background: red;">
-	           <input type="search" class="mui-input-clear" placeholder="歌名/歌手名/歌词">
-	       </div>
-	       <!--轮播图-->
-	       <div id="slider" class="mui-slider lunbo" >
-	         <div class="mui-slider-group mui-slider-loop">
-	           <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-	           <div class="mui-slider-item mui-slider-item-duplicate">
-	             <a href="#">
-	               <img src="../img/12.png">
-	             </a>
-	           </div>
-	           <!-- 第一张 -->
-	           <div class="mui-slider-item">
-	             <a href="#">
-	               <img src="../img/12.png">
-	             </a>
-	           </div>
-	           <!-- 第二张 -->
-	           <div class="mui-slider-item">
-	             <a href="#">
-	               <img src="../img/06.jpeg">
-	             </a>
-	           </div>
-	           <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-	           <div class="mui-slider-item mui-slider-item-duplicate">
-	             <a href="#">
-	               <img src="../img/05.jpg">
-	             </a>
-	           </div>
-	           
-	         </div>
-	         <div class="mui-slider-indicator">
-	           <div class="mui-indicator mui-active"></div>
-	           <div class="mui-indicator"></div>
-	         </div>
-	       </div>
-	       <script type="text/javascript">
-			//获得slider插件对象
-				var gallery = mui('.mui-slider');
-				gallery.slider({
-				  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
-				});
-			</script>
-	       <!--轮播图结束-->
-	       <!--歌手-->
-	       	<div class="singer">
-	       		<ul>
-	       			<li>
-	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
-	       				<p class="singer">歌手</p>
-	       			</li>
-	       			<li>
-	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
-	       				<p>歌手</p>
-	       			</li>
-	       			<li>
-	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
-	       				<p>歌手</p>
-	       			</li>
-	       			<li>
-	       				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
-	       				<p>歌手</p>
-	       			</li>
-	       		</ul>
-	       	</div>
-	       	<!--大家都在唱-->
-	       	<p class="dajia">大家都在唱</p>
-	       	
-	       	<!--k歌部分-->
-	       	<div class="kge">
-	       		<ul>
-	       			<!--每一整行-->
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       			<li>
-	       				<ul class="kgeFu">
-	       					<li>
-	       						<p class="kgetu"><img src="../img/kge.jpg"></p>
-	       						<ul class="kgewen">
-	       							<li>女人花</li>
-	       							<li>梅兰芳</li>
-	       						</ul>
-	       					</li>
-	       					<li class="border">k歌</li>
-	       				</ul>
-	       			</li>
-	       		</ul>
-	       	</div>
-	        <!--主界面具体展示内容结束-->
-	        
-	      </div>
-	     
-	    </div>  
-	    <div class="mui-off-canvas-backdrop"></div>
-	  </div>
-	</div>
+<div class="mui-off-canvas-wrap mui-draggable mui-slide-in bigBox">
+  <!-- 菜单容器 -->
+  <aside class="mui-off-canvas-left" id="offCanvasSide">
+<div class="mui-scroll-wrapper" style="background: #ffffff;">
+  <div class="mui-scroll">
+    <!-- 菜单具体展示内容 -->
+    <!--上面-->
+    <div class="medu_top">
+        <ul>
+        	<li>
+        		<p><span class="iconfont icon-zhuanshihuiyuan"></span></p>
+        		<p>砖石会员</p>
+        	</li>
+        	<li>
+        		<p><span class="iconfont icon-yinle3"></span></p>
+        		<p>砖石会员</p>
+        	</li>
+        	<li>
+        		<p><span class="iconfont icon-xiaoxizhongxin"></span></p>
+        		<p>砖石会员</p>
+        	</li>
+        </ul>
+    </div>
+    <!--中间-->
+    <div class="medu_center">
+    	<ul>
+    		<li>听歌识曲</li>
+    		<li>蝰蛇音效</li>
+    		<li>音乐云盘</li>
+    		<li>皮肤管理</li>
+    		<li>设置闹钟</li>
+    		<li></li>
+    		<li>定时关闭</li>
+    		<li>意见反馈</li>
+    	</ul>
+    </div>
+    <!--下面-->
+    <div class="medu_button">
+    	<ul>
+    		<li class="medu_button1">
+    			<ul>
+    				<li><span class="iconfont icon-shezhi"></span></li>
+    				<li>设置</li>
+    			</ul>
+    		</li>
+    		<li class="medu_button2">
+    			<ul>
+    				<li><span class="iconfont icon-gongjicls"></span></li>
+    				<li>退出应用</li>
+    			</ul>
+    		</li>
+    	</ul>
+    </div>
+  </div>
+</div>
+  </aside>
+  <!-- 主页面容器 -->
+  <div class="mui-inner-wrap">
+<!-- 主页面标题 -->
+<header class="mui-bar mui-bar-nav" style="background: red;">
+  <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+  <h1 class="mui-title header">
+  	<ul class="qiehuan">
+  		<li class="wode">我的</li>
+  		<li class="leku">乐库</li>
+  		<li class="yousheng">有声</li>
+  		<li class="kge">k歌</li>
+  		<!--<li>11</li>-->
+  	</ul>
+  </h1>
+</header>
+<div class="mui-content mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!-- 主界面具体展示内容 -->
+     <!--搜索框-->
+   <div class="mui-input-row mui-search" style="background: red;">
+       <input type="search" class="mui-input-clear" placeholder="歌名/歌手名/歌词">
+   </div>
+   <!--轮播图-->
+   <div id="slider" class="mui-slider lunbo" >
+     <div class="mui-slider-group mui-slider-loop">
+       <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+       <div class="mui-slider-item mui-slider-item-duplicate">
+         <a href="#">
+           <img src="../img/12.png">
+         </a>
+       </div>
+       <!-- 第一张 -->
+       <div class="mui-slider-item">
+         <a href="#">
+           <img src="../img/12.png">
+         </a>
+       </div>
+       <!-- 第二张 -->
+       <div class="mui-slider-item">
+         <a href="#">
+           <img src="../img/06.jpeg">
+         </a>
+       </div>
+       <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+       <div class="mui-slider-item mui-slider-item-duplicate">
+         <a href="#">
+           <img src="../img/05.jpg">
+         </a>
+       </div>
+       
+     </div>
+     <div class="mui-slider-indicator">
+       <div class="mui-indicator mui-active"></div>
+       <div class="mui-indicator"></div>
+     </div>
+   </div>
+   <script type="text/javascript">
+	//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+   <!--轮播图结束-->
+   <!--歌手-->
+   	<div class="singer">
+   		<ul>
+   			<li>
+   				<p><span class="iconfont icon-gongyezujian-zhishideng"></span></p>
+   				<p class="singer">歌手</p>
+   			</li>
+   			<li>
+   				<p><span class="iconfont icon-yangqitingshu"></span></p>
+   				<p>k歌榜</p>
+   			</li>
+   			<li>
+   				<p><span class="iconfont icon-hulianwangyingxiao-"></span></p>
+   				<p>已点伴奏</p>
+   			</li>
+   			<li>
+   				<p><span class="iconfont icon-icon_yingyongguanli"></span></p>
+   				<p>我的</p>
+   			</li>
+   		</ul>
+   	</div>
+   	<!--大家都在唱-->
+   	<p class="dajia">大家都在唱</p>
+   	
+   	<!--k歌部分-->
+   	<div class="kge">
+   		<ul>
+   			<!--每一整行-->
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/kge.jpg"></p>
+   						<ul class="kgewen">
+   							<li>女人花</li>
+   							<li>梅兰芳</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/19.jpg"></p>
+   						<ul class="kgewen">
+   							<li>星星点点</li>
+   							<li>郑智化</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/17.jpg"></p>
+   						<ul class="kgewen">
+   							<li>军中绿花</li>
+   							<li>小曾</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/19.jpg"></p>
+   						<ul class="kgewen">
+   							<li>广东爱情故事</li>
+   							<li>广东雨坤</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/16.jpg"></p>
+   						<ul class="kgewen">
+   							<li>沙漠骆驼</li>
+   							<li>展展与罗罗</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			<li>
+   				<ul class="kgeFu">
+   					<li>
+   						<p class="kgetu"><img src="../img/17.jpg"></p>
+   						<ul class="kgewen">
+   							<li>往后余生</li>
+   							<li>马良</li>
+   						</ul>
+   					</li>
+   					<li class="border">
+   						<div class="mui-content">
+							<div class="mui-content-padded">
+								
+								<p style="text-indent: 0;">
+									<a href="#middlePopover" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="padding-right: 5px; width: 37px; color: gray; border: 1px solid red;">k歌</a>
+								</p>
+							</div>
+						</div>
+						<!--右上角弹出菜单-->
+						<div id="middlePopover" class="mui-popover">
+							<div class="mui-popover-arrow"></div>
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell"><a href="#">黄色枫叶</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">王子归来</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">那些你很冒险的梦</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">落叶归根</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">一曲相思</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你要的全拿走</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">深度对话</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">说散就散</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">你还要我怎样</a>
+										</li>
+										<li class="mui-table-view-cell"><a href="#">空空如也</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+   					</li>
+   				</ul>
+   			</li>
+   			
+   		</ul>
+   	</div>
+    <!--主界面具体展示内容结束-->
+  </div>
+ 
+</div>  
+<div class="mui-off-canvas-backdrop"></div>
+  </div>
+</div>
 	 <!--底部播放-->
 	<nav class="mui-bar mui-bar-tab">
-			<audio type="video/mp3" class="video1" src="音频/汪苏泷 - 停止跳动.mp3" controls></audio>
+			<audio type="video/mp3" class="video1" src="../音频/邱永传 - 十一年.mp3" controls></audio>
 	</nav>
 	<script type="text/javascript">
-		
+		var singer = document.getElementsByClassName("singer")[0];
+		singer.addEventListener('tap',function(){
+      		mui.openWindow({
+			url: 'geshou.html', 
+		})
+      })
 	</script>
 	</body>
 </html>

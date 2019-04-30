@@ -148,18 +148,22 @@
 					"html/kgezi.html"
 				],
 				"refer": [
-					"index.html"
+					"index.html",
+					"html/geshou.html",
+					"html/leku.html"
 				],
 				"priority": 0
 			},
 			"html/leku.html": {
 				"resources": [
 					"html/kge.html",
-					"html/lunbozi.html"
+					"html/lunbozi.html",
+					"音频/汪苏泷 - 停止跳动.mp3"
 				],
 				"refer": [
 					"html/yousheng.html",
-					"index.html"
+					"index.html",
+					"html/shipin.html"
 				],
 				"priority": 0
 			},
@@ -172,7 +176,8 @@
 				"refer": [
 					"html/kge.html",
 					"index.html",
-					"html/leku.html"
+					"html/leku.html",
+					"html/shiyishi.html"
 				],
 				"priority": 0
 			},
@@ -189,6 +194,20 @@
 					"html/yousheng.html",
 					"html/leku.html"
 				],
+				"priority": 0
+			},
+			"html/shiyishi.html": {
+				"resources": [
+					"音频/5c2da6cbd7721.mp4"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/shipin.html": {
+				"resources": [
+					"音频/5c2da6cbd7721.mp4"
+				],
+				"refer": [],
 				"priority": 0
 			}
 		},

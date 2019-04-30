@@ -1,0 +1,101 @@
+  	*{
+		  		padding: 0;
+		  		margin: 0;
+		  		list-style: none;
+		  	}
+		  	.bigBox{
+    		max-width: 640px;
+    		min-width: 320px;
+    		margin: 0 auto;
+    	}
+    	.header ul{
+    		display: flex;
+    		list-style: none;
+    		margin: 0px auto;
+    		justify-content: space-around;
+    	}
+    	.header ul li{
+    		color: gray;
+    	}
+    	/*语音输入*/
+    	.yuyin{
+    		position: absolute;
+    		right: 10px;
+    		top: 10px;
+    	}
+    	.lunbo{
+    		background: red;
+    		/*height: 1200px;*/
+    		max-width: 640px;
+    		min-width: 320px;
+    		margin: 0 auto;
+    		z-index: 100;
+    	}
+    	.lunbo img{
+    		height: 170px;
+    	}
+    	/*歌手重复部分*/
+    	.singer>ul{
+	display: flex;
+	margin: 10% 0;
+	margin-left: 10%;
+	justify-content: space-around;
+	}
+	.singer>ul>li{
+		width: 25%;
+	}
+	.singer>ul>li>p:nth-child(2){
+		color: #000000;
+	}
+	.singer .iconfont{
+		color: red;
+		font-weight: 600;
+	}
+	/*删除按钮部分*/
+	/*k歌部分*/
+	.kge{
+		box-sizing: border-box;
+		/*height: 10px;*/
+	}
+	.kgeFu{
+		height: 80px;
+		display: flex;
+	}
+	.kgetu{
+		float: left;
+		width:80px;
+		height: 80px;
+	}
+	.kgetu img{
+		width: 100%;
+		height: 100%;
+	}
+	.kgewen{
+		font-family: 微软雅黑;
+		float: left;
+		margin: 15px;
+	}
+	.kgewen>li{
+		line-height: 30px;
+	}
+	.kgewen>li:nth-child(2){
+		color: #666666;
+		font-size: 13px;
+	}
+	.kgeFu>li:nth-child(1){
+		flex: 7;
+	}
+	
+	/*右边k歌文字*/
+	.kgeFu>li:nth-child(2){
+		flex: 1;
+		text-align: center;
+		line-height: 15px;
+	}
+	.border{
+		padding: 10px;
+		margin-top: 6%;
+		color: black;
+		font-weight: 700;
+	}
+   	
